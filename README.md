@@ -1,11 +1,9 @@
-#Seyed Alireza Mortazavi(S6136275)/Profesor:Armando Tacchella
-#Gridworld Monte Carlo Simulation
+# Seyed Alireza Mortazavi(S6136275)/Professor:Armando Tacchella
 
 # Gridworld Monte Carlo Simulation
 
 ## Overview
-
-This repository contains a Python implementation of a simple reinforcement learning environment known as Gridworld, using the Monte Carlo method for estimating state values. The Gridworld is a 5x5 grid where an agent moves based on defined actions. The Monte Carlo simulation is used to estimate the value of each state in the grid by running multiple episodes and averaging the returns.
+The "Gridworld Monte Carlo Simulation" is a reinforcement learning project focused on a 5x5 grid environment known as gridworld. This environment serves as a testing ground for understanding the dynamics of state values and agent actions. Unique states, A and B, offer diverse outcomes through specific transitions and rewards. The project's core lies in applying the Monte Carlo method for state-value estimation, pivotal in reinforcement learning, achieved by analyzing numerous episodes and their accrued rewards.
 
 ## Features
 
@@ -14,10 +12,16 @@ This repository contains a Python implementation of a simple reinforcement learn
 - **Actions**: Four possible actions - north, south, east, and west - that the agent can take in each state.
 - **Monte Carlo Simulation**: Implementation of the first-visit Monte Carlo method for estimating state values.
 - **Visualization**: Heatmap and bar chart visualization of state-value functions after running the simulation.
+  
+### Visualization
 
-## Files in the Repository
+- **Heatmap**: Shows the value of each state in the grid after the simulation.
+ 
+![1](https://github.com/AlirezaMortazavi/Artificial-Intelligence-1/assets/69080319/de4a0ffb-93fa-4f00-af7d-d34b72a5e63a)
 
-- `gridworld_monte_carlo.py`: Main Python script containing the implementation of the Gridworld environment and Monte Carlo simulation.
+- **Bar Chart**: Displays the same state values as a bar chart for a different perspective.
+  
+![2](https://github.com/AlirezaMortazavi/Artificial-Intelligence-1/assets/69080319/75bb9c49-82fb-424b-838d-d01dd955e790)
 
 ## Dependencies
 
@@ -35,9 +39,9 @@ This repository contains a Python implementation of a simple reinforcement learn
      ```
 
 2. **Running the Simulation**:
-   - Execute the script `gridworld_monte_carlo.py`:
+   - Execute the script `S6136275.ipynb`:
      ```
-     python gridworld_monte_carlo.py
+     python S6136275.ipynb
      ```
    - This will run the Monte Carlo simulation for 5000 episodes and display the resulting state-value function visualizations.
 
@@ -55,9 +59,5 @@ This repository contains a Python implementation of a simple reinforcement learn
 - **Method**: First-visit Monte Carlo method, where the return for each state is calculated as the sum of discounted rewards from that state until the end of the episode.
 - **Episodes**: By default, the simulation runs for 5000 episodes.
 
-### Visualization
-
-- **Heatmap**: Shows the value of each state in the grid after the simulation.
-- **Bar Chart**: Displays the same state values as a bar chart for a different perspective.
 
 
